@@ -5,6 +5,8 @@ import figlet from "figlet";
 import { Command } from "commander";
 import chalk from "chalk";
 import { login } from "./commands/auth/login.js";
+import { logout } from "./commands/auth/logout.js";
+import { my_info } from "./commands/auth/my-info.js";
 
 dotenv.config();
 
@@ -25,6 +27,8 @@ async function main() {
 
   program.version("0.0.1").description("Aclique-CLI: A CLI based AI tool");
   program.addCommand(login);
+  program.addCommand(logout);
+  program.addCommand(my_info);
 
   program.action(() => {
     program.help();
