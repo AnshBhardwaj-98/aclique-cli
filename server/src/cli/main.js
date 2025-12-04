@@ -7,6 +7,7 @@ import chalk from "chalk";
 import { login } from "./commands/auth/login.js";
 import { logout } from "./commands/auth/logout.js";
 import { my_info } from "./commands/auth/my-info.js";
+import { init } from "./commands/ai/init.js";
 
 dotenv.config();
 
@@ -29,6 +30,7 @@ async function main() {
   program.addCommand(login);
   program.addCommand(logout);
   program.addCommand(my_info);
+  program.addCommand(init);
 
   program.action(() => {
     program.help();

@@ -26,10 +26,10 @@ export class aiService {
       const result = streamText(streamConfig);
 
       let fullResponse = "";
-      for await (const del of result.textStream) {
-        fullResponse += del;
+      for await (const delta of result.textStream) {
+        fullResponse += delta;
         if (onChunk) {
-          onChunk(del);
+          onChunk(delta);
         }
       }
 
