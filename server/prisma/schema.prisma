@@ -120,3 +120,5 @@ model Messages {
 
   @@index([conversationId])
 }
+
+// A RANDOM LINE JUST TO MAINTAIN THE GITHUB STREAK
