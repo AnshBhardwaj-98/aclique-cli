@@ -20,7 +20,7 @@ const LogInForm = () => {
 
         {/* Logo */}
         <div className="flex justify-center mb-8 relative">
-          <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg shadow-purple-600/40">
+          <div className="w-20 h-20 bg-linear-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg shadow-purple-600/40">
             <span className="text-white text-3xl font-bold">A</span>
           </div>
         </div>
