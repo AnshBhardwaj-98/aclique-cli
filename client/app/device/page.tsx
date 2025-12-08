@@ -48,7 +48,7 @@ export default function VerifyDevicePage() {
   }
 
   return (
-    <main className="min-h-screen flex items-center justify-center p-6 bg-neutral-50 dark:bg-neutral-900 transition-colors">
+    <main className="min-h-screen flex items-center justify-center p-6 bg-neutral-950 transition-colors">
       <div className="w-full max-w-md bg-white dark:bg-neutral-800 shadow-xl rounded-2xl p-8 border border-neutral-200 dark:border-neutral-700">
         {/* Header */}
         <div className="flex items-center justify-center gap-3">

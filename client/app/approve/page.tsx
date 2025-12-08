@@ -65,7 +65,7 @@ const approvalPage = () => {
   };
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-[#0d1117] p-4">
+    <main className="min-h-screen flex items-center justify-center bg-neutral-950 p-4">
       <div className="w-full max-w-lg bg-white dark:bg-[#161b22] rounded-lg shadow border border-gray-200 dark:border-gray-700 p-8">
         {/* Header */}
         <div className="flex items-center justify-center gap-2 mb-6">
