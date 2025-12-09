@@ -4,6 +4,7 @@ import prisma from "../../../lib/db.js";
 import { getStoredToken } from "../../../lib/token.js";
 import { select } from "@clack/prompts";
 import yoctoSpinner from "yocto-spinner";
+import { startChat } from "../../chat/user-ai-chat.js";
 
 const initActions = async () => {
   const token = await getStoredToken();
@@ -37,7 +38,7 @@ const initActions = async () => {
 
   console.log(chalk.greenBright(`welcome ${user.name}`));
 
-  const choice = select({
+  const choice = await select({
     message: "select a feature:",
     options: [
       { value: "chat", label: "Chat", hint: "chat with ai" },
@@ -52,7 +53,7 @@ const initActions = async () => {
 
   switch (choice) {
     case "chat":
-      console.log("chat ");
+      startChat("chat");
       break;
     case "tool":
       console.log("tools ");

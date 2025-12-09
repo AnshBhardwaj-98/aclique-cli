@@ -1,7 +1,7 @@
 import { google } from "@ai-sdk/google";
 import { config } from "../../config/google.config.js";
 import chalk from "chalk";
-import { streamText, textStream } from "ai";
+import { convertToModelMessages, streamText } from "ai";
 
 export class aiService {
   constructor() {

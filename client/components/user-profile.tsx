@@ -26,7 +26,7 @@ export default function UserInfoPage({ user }: UserInfoProps) {
       <div className="absolute -bottom-40 -right-32 w-[450px] h-[450px] bg-blue-600/30 rounded-full blur-[150px] animate-pulse"></div>
 
       {/* Animated Header Line */}
-      <div className="absolute top-0 left-0 w-full h-[3px] bg-linear-to-r from-purple-500 via-pink-500 to-blue-500 animate-[gradientMove_4s_linear_infinite]"></div>
+      <div className="absolute top-0 left-0 w-full h-[3px] bg-linear-to-r from-purple-500 via-pink-500 to-green-500 animate-[gradientMove_4s_linear_infinite]"></div>
 
       <style>
         {`
