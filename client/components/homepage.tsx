@@ -1,11 +1,11 @@
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-[#0B0B0D] text-white">
+    <div className="min-h-screen bg-[#0B0B0D] text-white overflow-hidden">
       {/* Hero Section */}
       <section className="relative w-full flex flex-col items-center justify-center text-center px-6 py-32">
         {/* Background Glow Effects */}
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-purple-700/20 rounded-full blur-[140px]"></div>
-        <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600/20 rounded-full blur-[140px]"></div>
+        {/* <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600/20 rounded-full blur-[140px]"></div> */}
 
         {/* Title */}
         <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
